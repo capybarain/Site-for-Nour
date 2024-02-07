@@ -1,0 +1,300 @@
+body {
+    background-color: rgba(255, 255, 255, 0.482);
+    font-size: 80px; 
+    text-decoration-color: rgb(251, 208, 229);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: rgb(250, 215, 243);
+    overflow: hidden; /* Hide overflowing stars outside the body */
+    position: relative; /* Set position relative for absolute positioning of stars */
+}
+
+.title {
+    font-size: 80px;
+    color: #bba6d6; 
+}
+
+p {
+    color: rgb(11, 10, 10); 
+    font-size: large;
+}
+
+section {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+}
+
+.my-button {
+    margin-top: 10px; 
+    padding: 20px 30px;
+    font-size: 26px;
+    background-color: #bba6d6;
+    color: #fff; 
+    border: none;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+.stars {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: -1;
+}
+
+
+.star {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #f8c2e9;
+    opacity: 1;
+    animation: fallAnimation linear infinite;
+}
+
+@keyframes fallAnimation {
+    to {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
+
+
+section img {
+    width: 50%; 
+    height: auto; 
+}
+
+
+body.Menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+    margin: 0;
+    padding: 0; /* Add this line to set padding to zero */
+    background-color: rgba(255, 255, 255, 0.482);
+    font-size: 80px;
+    text-decoration-color: rgb(251, 208, 229);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #bba6d6;
+}
+.title.Menu{
+ font-size: 40px;
+    color: #bba6d6; 
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; 
+    z-index: 1; 
+}
+
+.my-button {
+    margin-top: 10px;
+    width: 200px; 
+    height: 60px; 
+    font-size: 26px;
+    background-color: #bba6d6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.my-button:hover {
+    background-color: #7f4e8e;
+  }
+.stars {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: -1;
+}
+
+
+.star {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #f8c2e9;
+    opacity: 1;
+    animation: fallAnimation linear infinite;
+}
+
+@keyframes fallAnimation {
+    to {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
+.corner-image {
+    position: absolute;
+    width: 200px;
+    height: 200px; 
+}
+
+.top-left {
+    top: 0;
+    left: 0;
+}
+
+.top-right {
+    top: 0;
+    right: 0;
+}
+
+.bottom-left {
+    bottom: 0;
+    left: 0;
+}
+
+.bottom-right {
+    bottom: 0;
+    right: 0;
+}
+
+
+
+
+
+body.Quiz {
+    background-color: #ffffff;
+    color:#bba6d6;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .app {
+    text-align:initial;
+  }
+  
+  h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: left;
+   
+  }
+  
+  .quiz {
+    background-color: rgba(255, 149, 216, 0.285);
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  #question {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .btn {
+    background-color: #bba6d6;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: block;
+    width: 100%;
+  }
+  
+  .btn:hover {
+    background-color: #ffffff;
+  }
+  .Go-back-button {
+    background-color: #bba6d6;
+    color: #000000;
+    padding: 0.5rem 1rem;
+    font-size: 14px; 
+    cursor: pointer;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: block;
+    position: absolute; 
+    top: 0;
+    left: 0; 
+}
+
+body.I-love {
+    background-color: #fce4ec;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.slider {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; 
+    background-color: white;
+    padding: 40px; /* Increased padding for more space */
+    margin-top: -200px; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.slide {
+    display: none;
+}
+
+.slide-content {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.slide img {
+    width: 100%;
+    max-width: 300px; /* Set a maximum width for the images */
+    height: auto;
+}
+
+.navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.nav-button {
+    background: #bba6d6;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+}
